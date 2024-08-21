@@ -19,9 +19,9 @@ jobs:
   build-ui:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v4.1.7
     - name: Install Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v4.0.3
       with:
         node-version: '20'
     - name: Install dependencies
@@ -45,7 +45,7 @@ jobs:
       with:
         fetch-depth: 0
     - name: Download UI
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v4.1.8
       with:
         name: UI
         path: bootstrap/manager/src/main/resources/static
