@@ -72,7 +72,7 @@ jobs:
       with:
         gradle-home-cache-cleanup: true
     - name: Build
-      run: ./gradlew build
+      run: ./gradlew build --warning-mode all
       env:
         BUILD_NUMBER: ${{ steps.getCurrentBuild.outputs.result }}
     - uses: actions/upload-artifact@v4
