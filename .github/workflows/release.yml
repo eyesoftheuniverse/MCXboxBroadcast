@@ -54,7 +54,7 @@ jobs:
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
-        java-version: 17
+        java-version: 20
         distribution: temurin
     - name: Get previous build number
       id: getPreviousBuild
