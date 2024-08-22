@@ -50,7 +50,7 @@ jobs:
         name: UI
         path: bootstrap/manager/src/main/resources/static
     - name: Validate Gradle Wrapper
-      uses: gradle/wrapper-validation-action@v3.5.0
+      uses: gradle/actions/wrapper-validation@v3.5.0
     - name: Setup Java JDK
       uses: actions/setup-java@v4.2.2
       with:
