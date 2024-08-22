@@ -7,6 +7,10 @@ relocate("com.fasterxml.jackson")
 relocate("com.google.gson")
 relocate("net.raphimc.minecraftauth")
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     api(project(":core"))
     api(libs.bundles.jackson)
