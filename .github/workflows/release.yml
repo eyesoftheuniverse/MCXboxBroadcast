@@ -54,7 +54,7 @@ jobs:
     - name: Setup Java JDK
       uses: actions/setup-java@v4.2.2
       with:
-        java-version: 22
+        java-version: 21
         distribution: temurin
     - name: Get previous build number
       id: getPreviousBuild
